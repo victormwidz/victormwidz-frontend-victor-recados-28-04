@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Recados</title>
+  </head>
+  <body>
+      <div class="container container-login d-flex flex-column">
+        <div class="row">
+          <div class="col-12">
+              <div class="d-flex flex-row align-items-center">
+                <div class="p-2"><h1>Meus recados</h1></div>
+              </div>
+            <form class="form-recados d-flex flex-row justify-content-between mb-4" method="post" onsubmit="addRecados(event)">
+              <input id="register-descrition" type="text" class="register-descrition rounded-1" placeholder="Descrição" required />
+              <input id="register-details" type="text" class="register-details rounded-1" placeholder="Detalhamento" required />
+              <button id="add-item" type="submit" class="rounded-1 botao-salvar">Salvar</button>
+            </form>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Descrição</th>
+                    <th scope="col">Detalhamento</th>
+                    <th scope="col">Ações</th>
+                  </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+              </table>  
+          </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
